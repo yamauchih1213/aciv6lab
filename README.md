@@ -86,3 +86,16 @@ gzip -c AlmaLinux-9.tar | split -b 50M - AlmaLinux-9.tar.gz.part_
 ```Bash
 cat AlmaLinux-9.tar.gz.part_a* | gunzip > AlmaLinux-9.tar
 ```
+
+# 参考4: リンク集
+[ACI: JSON ファイルで設定を確認する際に各 attributes 配下の userdom が異なる値となる](https://community.cisco.com/t5/tkb-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC-sr-%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/aci-json-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%A7%E8%A8%AD%E5%AE%9A%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E9%9A%9B%E3%81%AB%E5%90%84-attributes-%E9%85%8D%E4%B8%8B%E3%81%AE-userdom-%E3%81%8C%E7%95%B0%E3%81%AA%E3%82%8B%E5%80%A4%E3%81%A8%E3%81%AA%E3%82%8B/ta-p/4818217)
+
+[AlmaLinux OS Now Available via WSL CLI!](https://almalinux.org/blog/2025-04-23-almalinux-os-available-via-wsl-cli/)
+
+[dnfコマンドの使い方](https://qiita.com/yasushi-jp/items/0dc7f413632927f92286)
+
+[【pip install】インストール可能なバージョンを確認しようとしたらエラーが出た話](https://qiita.com/yuuuka/items/c0f1776da466df0d63a1)
+
+[SSH公開鍵認証で接続するまで](https://qiita.com/kazokmr/items/754169cfa996b24fcbf5)
+
+[Vi コマンド一覧](https://qiita.com/sgash708/items/65236bf7885a8f3bc28e)

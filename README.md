@@ -7,6 +7,7 @@ wsl -d Ubuntu-24.04
 ```Bash
 cd
 git clone https://github.com/yamauchih1213/aciv6lab.git
+cd aciv6lab
 bash 00setup.sh
 exit
 ```

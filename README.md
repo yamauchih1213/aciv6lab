@@ -40,12 +40,12 @@ sudo ls
 sudo dnf update -y
 sudo dnf install python3-pip -y
 sudo pip3 install --upgrade pip
-sudo pip3 install ansible==2.9.23
+sudo pip3 install ansible-core
 ansible-galaxy collection install cisco.aci
 pip3 install lxml
 pip3 install xmljson
 sudo dnf install vim-minimal -y
-sudo dnf install git -y
+sudo dnf install git diffutils -y
 ```
 * 必要に応じSSH鍵を生成してくだださい。(githubに置くなど)
 ```Bash
@@ -55,9 +55,10 @@ ssh-keygen -t rsa -b 4096
 ```Powershell
 wsl -t AlmaLinux-9
 wsl --export AlmaLinux-9 C:\dcloud\AlmaLinux-9.tar
+wsl -d AlmaLinux-9
 ```
 ```Bash
-gzip -c /mnt/c/dcloud/AlmaLinux-9.tar | split -b 50M - AlmaLinux-9.tar.gz.part_
+gzip -c /mnt/c/dcloud/AlmaLinux-9.tar | split -b 50M -a 2 - AlmaLinux-9.tar.gz.part_
 ```
 
 # 参考2: 各種コマンド(WSL関連)
@@ -100,3 +101,4 @@ cat AlmaLinux-9.tar.gz.part_a* | gunzip > AlmaLinux-9.tar
 [SSH公開鍵認証で接続するまで](https://qiita.com/kazokmr/items/754169cfa996b24fcbf5)
 
 [Vi コマンド一覧](https://qiita.com/sgash708/items/65236bf7885a8f3bc28e)
+
